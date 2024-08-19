@@ -1,6 +1,6 @@
 const screen = document.querySelector(".screen");
 function restrictInput(input) {
-    // Allow only digits 1-9 and operators +-*%
+    // Allow only digits 1-9 and operators +-*%/.
     const validChars = /[^123456789\.\/\+\-\*\%]/g;
     input.value = input.value.replace(validChars, '');
 }
