@@ -92,6 +92,10 @@ body{
     text-align: right;
 }
 
+.hidden_class{
+    opacity: 0;
+}
+
 .buttons_row{
     display: flex;
     justify-content: space-between;
