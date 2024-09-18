@@ -65,6 +65,10 @@ body{
     cursor: url("assets/cursor_for_text.svg"), auto;
 }
 
+#result{
+    letter-spacing: -0.5px;
+}
+
 .lower_part{
     width: 100%;
     background: transparent;
@@ -94,6 +98,7 @@ body{
     overflow: auto;
     font-size: 29px;
     text-align: right;
+    letter-spacing: -0.5px;
 }
 
 .hidden_class{
