@@ -3,24 +3,24 @@
   :root { font-family: 'InterDisplay', sans-serif; }
 }
 
-html{
+html {
     box-sizing: border-box;
     height: 100%;
 }
 
 *,
 *::before,
-*::after{
+*::after {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
 }
 
-*:focus{
+*:focus {
     outline: 0;
 }
 
-body{
+body {
     align-items: center;
     background: #010101;
     display: flex;
@@ -30,7 +30,7 @@ body{
     cursor: url("assets/mac-cursor.svg"), auto;
 }
 
-.calculator{
+.calculator {
     cursor: url("assets/mac-cursor.svg"), auto;
     background: #050505;
     border: 2.13px solid #252525;
@@ -42,7 +42,7 @@ body{
     color: #F5F5F5;
 }
 
-.screen{
+.screen {
     background: #0D0D0D;
     border: 2px solid #252525;
     border-radius: 14.45px;
@@ -58,7 +58,7 @@ body{
     cursor: url("assets/input-cursor.svg"), auto;
 }
 
-.screen input{
+.screen input {
     background: transparent;
     border: none;
     font-family: 'InterDisplay', sans-serif;
@@ -66,11 +66,11 @@ body{
     cursor: url("assets/input-cursor.svg"), auto;
 }
 
-#result{
+.result {
     letter-spacing: -0.5px;
 }
 
-.lower_part{
+.lower_part {
     width: 100%;
     background: transparent;
     border: none;
@@ -82,7 +82,7 @@ body{
     gap: 15px;
 }
 
-.lower_part input{
+.lower_part input {
     color: #F5F5F5;
     width: 100%;
     display: flex;
@@ -90,7 +90,7 @@ body{
     text-align: right;
 }
 
-.calculation{
+.calculation {
     width: 100%;
     background: transparent;
     border: none;
@@ -102,17 +102,17 @@ body{
     letter-spacing: -0.5px;
 }
 
-.hidden_class{
+.hidden-class {
     opacity: 0;
 }
 
-.buttons_row{
+.buttons_row {
     display: flex;
     justify-content: space-between;
     margin: 3% 0;
 }
 
-.button{
+.button {
     background: #101010;
     background: radial-gradient(at left top, #101010, #010101);
     border: 1.76px solid #252525;
@@ -129,22 +129,22 @@ button {
     cursor: url('assets/hand2.svg'), auto;
 }
 
-.zero{
+.zero {
     flex-basis: 163.23px;
     border-radius: 23px;
     font-weight: 500;
     background: linear-gradient(0deg, #030303, #0C0C0C);
 }
 
-.red{
+.red {
     color: red;
 }
 
-.symbol{
+.symbol {
     font-family: inherit;
     font-size: 44px;
 }
 
-.period{
+.period {
     padding-top: 12px;
 }

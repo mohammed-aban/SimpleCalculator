@@ -14,18 +14,19 @@
             <input type="text" class="calculation" onfocus="this.blur()" readonly
             oninput="restrictInput(this)">
             <div class="lower_part">
-                <svg id="hidden" class="hidden_class" width="25" height="17" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg id="hidden" class="hidden-class" width="25" height="17" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M20.9742 8.63463V12.8128H0.328936V8.63463H20.9742ZM20.9742 0.360148V4.53835H0.328936V0.360148H20.9742Z" fill="#5A5A5A"/>
                     </svg>                          
-                <input type="text" id="result"
+                <input type="text" class="result"
                 oninput="restrictInput(this)">    
             </div>
         </div>
         <div class="buttons_row">
-            <button class="button red" onclick="delete_everything()">C</button>
-            <button class="button red" onclick="add('/')">/</button>
-            <button class="button red" onclick="add('%')">%</button>
-            <button class="button" onclick="backspace()"><svg width="37" height="22" viewBox="0 0 37 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <button class="button red" value="C">C</button>
+            <button class="button red" value="/">/</button>
+            <button class="button red" value="%">%</button>
+            <button class="button" value="backspace">
+                <svg width="37" height="22" viewBox="0 0 37 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <mask id="path-1-outside-1_287_8" maskUnits="userSpaceOnUse" x="0" y="-1" width="37" height="23" fill="black">
                 <rect fill="white" y="-1" width="37" height="23"/>
                 <path d="M11.2656 21.375L0.703125 10.8125L11.2656 0.25L13.2812 2.25L9.6875 5.84375C8.5 7.03125 7.17188 8.28125 5.90625 9.45312C6.84375 9.40625 7.8125 9.35938 8.76562 9.35938H36.4531V12.2656H8.76562C7.8125 12.2656 6.84375 12.2344 5.89062 12.1875C7.17188 13.3594 8.5 14.6094 9.6875 15.7812L13.2812 19.375L11.2656 21.375Z"/>
@@ -36,30 +37,30 @@
                 </button>
         </div>
         <div class="buttons_row">
-            <button class="button" onclick="add('7')">7</button>
-            <button class="button" onclick="add('8')">8</button>
-            <button class="button" onclick="add('9')">9</button>
-            <button class="button red symbol" onclick="add('*')">*</button>
+            <button class="button" value="7">7</button>
+            <button class="button" value="8">8</button>
+            <button class="button" value="9">9</button>
+            <button class="button red symbol" value="*">*</button>
         </div>
         <div class="buttons_row">
-            <button class="button" onclick="add('4')">4</button>
-            <button class="button" onclick="add('5')">5</button>
-            <button class="button" onclick="result.value += '6'">6</button>
-            <button class="button symbol red" onclick="add('+')">&plus;</button>
+            <button class="button" value="4">4</button>
+            <button class="button" value="5">5</button>
+            <button class="button" value="6">6</button>
+            <button class="button symbol red" value="+">&plus;</button>
         </div>
         <div class="buttons_row">
-            <button class="button" onclick="add('1')">1</button>
-            <button class="button" onclick="add('2')">2</button>
-            <button class="button" onclick="add('3')">3</button>
-            <button class="button symbol red" onclick="add('-')">&minus;</button>
+            <button class="button" value="1">1</button>
+            <button class="button" value="2">2</button>
+            <button class="button" value="3">3</button>
+            <button class="button symbol red" value="-">&minus;</button>
         </div>
         <div class="buttons_row">
-            <button class="button zero" onclick="add('0')">0</button>
-            <button class="button period" onclick="add('.')"><svg width="9" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <button class="button zero" value="0">0</button>
+            <button class="button period" value="."><svg width="9" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M4.04767 8.41534C2.98346 8.41534 2.07521 8.04837 1.32292 7.31442C0.588974 6.56213 0.222003 5.64471 0.222003 4.56214C0.222003 3.49793 0.588974 2.58968 1.32292 1.83739C2.07521 1.0851 2.98346 0.708952 4.04767 0.708952C5.13024 0.708952 6.03849 1.0851 6.77243 1.83739C7.52472 2.58968 7.90086 3.49793 7.90086 4.56214C7.90086 5.64471 7.52472 6.56213 6.77243 7.31442C6.03849 8.04837 5.13024 8.41534 4.04767 8.41534Z" fill="#FF0000"/>
                 </svg>
                 </button>
-            <button class="button symbol red" onclick="final_result()">&equals;</button>
+            <button class="button symbol red" value="equals">&equals;</button>
         </div>
     </div>
     <script src="script.js"></script>   
