@@ -94,6 +94,7 @@ function checkValue(input) {
 
         case '0':
             add('0');
+            break;
 
         case '+':
             add('+');
